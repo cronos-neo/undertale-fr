@@ -7,6 +7,7 @@
     'use strict';
 
     const ANTHAN_VARIANTS = [
+        // Classiques & running gag canon
         'Anthan',
         'Anatan',
         'Natation',
@@ -39,7 +40,6 @@
         'Anathan',
         'Natation Synchronisée',
         'Manhattan Project',
-        'Anatan-san',
         'Anathomy of Grey',
         'Anatholien Sauvage',
         'Anthracite v2.0',
@@ -56,7 +56,23 @@
         'En-Attendant-Godot',
         'Antha-na-na-na-na',
         'Papyrus l\'appelle Anthan',
-        'Anthan.exe a cessé de fonctionner'
+        'Anthan.exe a cessé de fonctionner',
+
+        // Arc Re:Zero & Jeux de mots en "-tan" (Dédicace Otaku)
+        'Emilia-tan (Fan de Re:Zero démasqué)',
+        'Anatan-tan (D.M.T : Déesse Majestueuse Traductrice)',
+        'Rem-than (Qui est Rem d\'ailleurs ?)',
+        'Subaru-than (Mort Réversible du Patch)',
+        'Beako-than (Je suppose, en fait)',
+        'Satella-tan (L\'Amour Obscur du Lore)',
+        'Pételgeuse Rom-Anthan-Contee (Le cerveau tremble !)',
+        'Tantantan-than',
+        'Tan-Tan le Reporter de l\'Outremonde',
+        'Tantacule-than (Calamar céleste)',
+        'Tangente-than (Il fuit le dialogue)',
+        'Tantal-than (Le supplice de la trad)',
+        'Tanzanite-than (Pierre précieuse du Sous-sol)',
+        'Tandoori-than (Épicé à 200°C)'
     ];
 
     const GLITCH_CHARS = '░▒▓█▄▀■▲▼◆#&@?!/\\*';
@@ -176,7 +192,7 @@
 
             target.addEventListener('mouseenter', () => {
                 showCustomTooltip(target);
-                if (Math.random() < 0.35 && !isGlitching) {
+                if (Math.random() < 0.40 && !isGlitching) {
                     triggerVariantChange(target, true);
                 }
             });
