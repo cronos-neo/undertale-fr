@@ -1,0 +1,274 @@
+/* ==============================================================================
+   CENTRE DE TÉLÉCHARGEMENT : DESIGN SOBRE, ARCHITECTURAL & LISIBLE (MISTRAL-GRADE)
+   ============================================================================== */
+
+.downloads-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    width: 100%;
+}
+
+.downloads-hero-block {
+    margin-bottom: 40px;
+    max-width: 780px;
+}
+
+.downloads-category-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.downloads-title {
+    font-family: var(--font-pixel);
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    color: #ffffff;
+    margin-bottom: 12px;
+    letter-spacing: 0.04em;
+}
+
+.downloads-desc {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* ==============================================================================
+   GRILLE DES DEUX GRANDS PÔLES DE TÉLÉCHARGEMENT
+   ============================================================================== */
+.major-dl-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 56px;
+}
+
+.dl-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-md);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.dl-card:hover {
+    border-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.dl-card:hover .pixel-mosaic-layer {
+    opacity: 0.42;
+}
+
+.dl-card:active {
+    transform: translateY(2px) scale(0.995);
+    border-color: #ffffff;
+}
+
+.dl-card:active .pixel-mosaic-layer {
+    opacity: 0.85;
+}
+
+.dl-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.dl-card-badge {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: var(--radius-sm);
+    letter-spacing: 0.06em;
+    margin-bottom: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-subtle);
+}
+
+.dl-card-heading {
+    font-family: var(--font-pixel);
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+    letter-spacing: 0.03em;
+}
+
+.dl-card-text {
+    font-size: 0.96rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    margin-bottom: 6px;
+}
+
+.dl-files-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dl-file-action-btn {
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 14px 18px;
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    text-decoration: none;
+    transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.dl-file-action-btn:hover {
+    background: #181820;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.dl-file-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dl-file-label svg {
+    flex-shrink: 0;
+}
+
+.file-size-badge {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    background: #08080c;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.dl-file-action-btn:hover .file-size-badge {
+    color: #ffffff;
+    border-color: var(--border-medium);
+}
+
+/* ==============================================================================
+   TABLEAU REGISTRE COMPLET DES FICHIERS (SOBRE & ARCHITECTURAL)
+   ============================================================================== */
+.master-table-section {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.table-header-bar {
+    background: var(--bg-surface-elevated);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.table-header-bar h3 {
+    font-family: var(--font-pixel);
+    font-size: 1.35rem;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+
+.table-header-sub {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background: var(--bg-surface);
+}
+
+.master-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.94rem;
+    min-width: 680px;
+}
+
+.master-table thead tr {
+    background: #08080c;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.master-table th {
+    padding: 14px 20px;
+    text-align: left;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.master-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    vertical-align: middle;
+}
+
+.master-table tr:last-child td {
+    border-bottom: none;
+}
+
+.master-table tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.table-btn-dl {
+    font-size: 0.86rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-subtle);
+    padding: 6px 14px;
+    border-radius: var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.table-btn-dl:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #000000;
+}
+
+@media (max-width: 900px) {
+    .major-dl-grid {
+        grid-template-columns: 1fr;
+    }
+}

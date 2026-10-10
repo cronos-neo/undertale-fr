@@ -1,0 +1,4 @@
+downloads/*
+!downloads/README.md
+.DS_Store
+*.log
