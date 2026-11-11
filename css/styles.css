@@ -1,0 +1,13 @@
+/* ==============================================================================
+   FEUILLE DE STYLE COMPARTIMENTÉE
+   L'ancien fichier monolithique a été scindé en modules distincts et optimisés :
+   - css/base.css       : Tokens, typographie, réinitialisation, navbar et footer
+   - css/home.css       : Arène interactive de sélection du jeu (accueil)
+   - css/game.css       : Fiches de jeux, centre OS dynamique, frise 3 étapes et équipe 2x2
+   - css/downloads.css  : Registres et tables des téléchargements
+   ============================================================================== */
+
+@import url('base.css');
+@import url('home.css');
+@import url('game.css');
+@import url('downloads.css');
